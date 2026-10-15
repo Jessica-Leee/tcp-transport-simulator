@@ -63,6 +63,6 @@ Sources: [official Spring 2026 starter archive](https://sp26.cs168.io/assets/pro
 
 Packaging omits caches, captures, traces, Git/IDE metadata, the downloaded ZIP, and optional browser GUI/download/documentation tooling. It adds this README, ignore rules, a test launcher, and verification notes. The headless simulator and course test fixtures remain intact.
 
-## Private course archive
+## Course source and sharing terms
 
-Keep this repository **private** under the course's solution-sharing policy. It is prepared for private review and preservation, not public distribution. No new open-source license is applied to course or student materials.
+The [Spring 2026 course policy](https://sp26.cs168.io/policies/#collaboration-policy) restricts public distribution of solution code. Course and student materials retain their original attribution and applicable sharing restrictions. No new open-source license is applied by this archive.
