@@ -1,4 +1,4 @@
-# TCP Transport Simulator
+# TCP Transport Simulator — CS 168
 
 A course implementation of a **TCP subset** for **UC Berkeley CS 168, Spring 2026, Project 3: Transport**, running inside the supplied POX-based network simulator. It **does not implement congestion control** and is not a production TCP stack.
 
