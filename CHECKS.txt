@@ -1,0 +1,38 @@
+TCP transport archive verification
+
+Source integrity
+- Extracted the official Spring 2026 Project 3 starter with path validation:
+  no absolute paths, traversal (..), drive paths, backslash paths, or symlinks.
+- No unsafe paths were present. Excluded 102 cache/capture/archive/platform
+  entries during extraction. Omitted optional POXDesk/CableBear browser GUI,
+  download helper, and documentation tools from the simulation-focused copy.
+- Copied the recovered final student_socket.py without changing a byte.
+- Existing notices in retained course/POX/simulator sources are unchanged.
+- Original downloaded archive and recovered submission remain untouched.
+
+Passed
+- Original course autograder: 30/30 tests, 9 stages, 28.584 seconds.
+- Final packaged command, python3.12 run_tests.py all: 30/30 tests,
+  9 stages, 27.638 seconds, exit status 0.
+- Runtime: existing Python 3.12.6; no installation or package download.
+- Tests used the supplied virtual-time network simulator; no real network,
+  browser GUI, native pcap extension, or external service was required.
+- All 223 retained Python source files, including the test launcher, passed
+  syntax compilation. Untouched POX modules pox/proto/dhcpd.py:252 and
+  pox/forwarding/topo_proactive.py:334 emit tuple-identity SyntaxWarnings.
+- Staged text pattern scan found no matching private keys, credential tokens,
+  student-ID assignments, or absolute user paths.
+- Removed generated trace/capture/cache output after verification.
+
+Submission SHA-256
+1dfae1e87aa7519ec831afe577c58555aec09a92039f2b0d4872c841190bbcfa
+
+Limits
+- Implements a TCP subset with no congestion control, not complete TCP/RFC
+  behavior. LISTEN/SYN_RECEIVED server-side behavior is not implemented.
+- Passing results cover the supplied course autograder, not all edge cases.
+- Python 3.13+, legacy GUI, native capture, real-network modes, and unrelated
+  upstream POX unit tests were not validated.
+- No transport algorithm or original autograder/test scenario was edited.
+- The test launcher only fixes interpreter selection and exit-status reporting.
+- No GitHub repository, push, or publication was performed by this task.
