@@ -8,6 +8,16 @@ The submitted implementation is `ext/cs168p2/student_socket.py`, built on the co
 
 The implementation does not support passive server-side `LISTEN`/`SYN_RECEIVED` behavior. RFC references in the source describe partial implementations, not complete compliance.
 
+## Repository map
+
+| Location | Purpose |
+| --- | --- |
+| [`ext/cs168p2/student_socket.py`](ext/cs168p2/student_socket.py) | Recovered final submission, including the course-provided socket interface. |
+| [`ext/cs168p2/tests/`](ext/cs168p2/tests/), [`ext/cs168p2/autograder.py`](ext/cs168p2/autograder.py) | Course scenarios and test harness. |
+| [`ext/tcpip/`](ext/tcpip/), [`pox/`](pox/) | Supplied simulated network stack and POX framework. |
+| [`run_tests.py`](run_tests.py) | Local test entry point with consistent interpreter selection. |
+| [Checks](CHECKS.txt), [source notices](THIRD_PARTY.md) | Verification scope, final-submission hash, and framework provenance. |
+
 ## Run the simulated tests
 
 Use **Python 3.12** from an existing installation. This archive was verified with Python **3.12.6**. No pip packages, native capture extension, or external network access are required for the course simulation tests.
@@ -43,6 +53,8 @@ Submission SHA-256:
 
 These results describe the supplied tests, not complete TCP/RFC coverage. Detailed checks and limits are in `CHECKS.txt`.
 
+The results were recorded during archive preparation on **October 14, 2026**. No simulations were rerun for this documentation refresh. Generated traces and captures are runtime output, not required repository inputs.
+
 ## Framework and source attribution
 
 The network simulator, reference socket code, packet utilities, test harness, and test scenarios are supplied course/framework material, not claimed as original student work. The original upstream README is preserved as `docs/UPSTREAM_README.md`; existing source copyright and license notices are retained.
@@ -54,4 +66,3 @@ Packaging omits caches, captures, traces, Git/IDE metadata, the downloaded ZIP, 
 ## Private course archive
 
 Keep this repository **private** under the course's solution-sharing policy. It is prepared for private review and preservation, not public distribution. No new open-source license is applied to course or student materials.
-

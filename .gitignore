@@ -6,6 +6,7 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
+env/
 
 # Simulation output and captures
 trace/
@@ -28,7 +29,7 @@ __MACOSX/
 # Local credentials
 .env
 .env.*
+!.env.example
 *.pem
 *.key
 credentials*.json
-
